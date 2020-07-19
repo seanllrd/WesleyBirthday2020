@@ -1,0 +1,7 @@
+C:\Users\seanl\source\repos\WesleyBirthdayWishes\WesleyBirthdayWishes\bin\Debug\WesleyBirthdayWishes.exe.config
+C:\Users\seanl\source\repos\WesleyBirthdayWishes\WesleyBirthdayWishes\bin\Debug\WesleyBirthdayWishes.exe
+C:\Users\seanl\source\repos\WesleyBirthdayWishes\WesleyBirthdayWishes\bin\Debug\WesleyBirthdayWishes.pdb
+C:\Users\seanl\source\repos\WesleyBirthdayWishes\WesleyBirthdayWishes\obj\Debug\WesleyBirthdayWishes.csprojAssemblyReference.cache
+C:\Users\seanl\source\repos\WesleyBirthdayWishes\WesleyBirthdayWishes\obj\Debug\WesleyBirthdayWishes.csproj.CoreCompileInputs.cache
+C:\Users\seanl\source\repos\WesleyBirthdayWishes\WesleyBirthdayWishes\obj\Debug\WesleyBirthdayWishes.exe
+C:\Users\seanl\source\repos\WesleyBirthdayWishes\WesleyBirthdayWishes\obj\Debug\WesleyBirthdayWishes.pdb
