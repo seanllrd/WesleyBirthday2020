@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace WesleyBirthdayWishes
 {
@@ -36,20 +33,64 @@ namespace WesleyBirthdayWishes
          `-.._                             _..-'
               `````''''-----------''''`````";
 
+            string cakeAscii2 = @"
+                             
+          ~                 ~                    
+     *                 *               *       *  
+                *               * 
+  ~       *               *         ~    *   
+              *   (   ~     )  *      )       *   ~  
+               ( (_)   )   (_)   (   (_) )         *
+    *    ~    (_) # ( (_) ( # ) (_) ) # (_) *
+           *  _#.-#(_)-#-(_)#(_)-#-(_)#-.#_       *  
+            .' #  # #  #  # # #  #  # #  # `.      
+  *        :   #    #  #  #   #  #  #    #   :   ~     *
+           :.       #     #   #     #       .:      
+    ~      | `-.__                     __.-' |      *  
+        *  |      `````'''''''''''`````      | *       
+           |         | ||\ |~)|~)\ /         |        *
+     *     |         |~||~\|~ |~  |          |       
+           |                                 |       ~
+   ~    *  |      |~)||~)~|~| ||~\|\ \ /     |   *     
+        _.-|      |~)||~\ | |~|| /|~\ |      |-._      *
+   *  .'   '.      ~            ~           .'   `.  
+      :      `-.__                     __.-'      :  *
+       `.         `````''''''''''''`````         .'
+         `-.._                             _..-'
+              `````''''-----------''''`````";
+
             string[] text = new string[] { "Happy Birthday, Wesley!!" };
             string header = GetHeader(text);
-            Console.BackgroundColor = ConsoleColor.Black;
+            int count = 1;
 
-            Console.ForegroundColor = ConsoleColor.Blue;
-            string PADDING = new string(' ', (Console.WindowWidth) / 10);
-            foreach (var section in header.Split('\n'))
+            while (!(Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Enter))
             {
-                Console.WriteLine($"{PADDING}{section}");
+                Console.Clear();
+
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.Blue;
+                string PADDING = new string(' ', (Console.WindowWidth) / 10);
+                foreach (var section in header.Split('\n'))
+                {
+                    Console.WriteLine($"{PADDING}{section}");
+                }
+                Console.WriteLine("Press Enter to stop loop");
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                if (count % 2 == 1)
+                {
+                    Console.WriteLine(cakeAscii);
+                }
+                else
+                {
+                    Console.WriteLine(cakeAscii2);
+                }
+                
+                Thread.Sleep(1000);
+                count++;
             }
 
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine(cakeAscii);
-            
+            Console.WriteLine("Press enter to quit...");
             Console.ReadLine();
         }
 
